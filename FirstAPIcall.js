@@ -1,5 +1,24 @@
 const superagent = require('superagent');
-//const res =""
 
-superagent.get('localhost:3000').then(response => { const rawBody = response.text;console.log(rawBody);});
+superagent.get('localhost:3000/posts')
+.then(response => { 
+  const rawBody = response.text;
+  const responseCode = response.statusCode;
+  console.log(rawBody); 
+  console.log(responseCode);
+  describe("test",()=>{test("check ResponseCode", () => {const input = responseCode})});
+  const output = 200;
+})
 
+
+
+  
+  
+
+
+
+   
+   
+
+
+  

@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "superagent": "^7.1.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "name": "bignited",
+  "description": "new",
+  "version": "1.0.0",
+  "main": "FirstAPIcall.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mordal/bignited.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mordal/bignited/issues"
+  },
+  "homepage": "https://github.com/Mordal/bignited#readme"
+}

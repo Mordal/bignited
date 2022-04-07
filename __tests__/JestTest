@@ -1,0 +1,2 @@
+
+  expect(filterByTerm(input, "link")).toEqual(output);
