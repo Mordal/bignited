@@ -6,8 +6,10 @@ superagent.get('localhost:3000/posts')
   const responseCode = response.statusCode;
   console.log(rawBody); 
   console.log(responseCode);
-  describe("test",()=>{test("check ResponseCode", () => {const input = responseCode})});
-  const output = 200;
+
+
+ // describe("test",()=>{test("check ResponseCode", () => {const input = responseCode})});
+ // const output = 200;
 })
 
 
