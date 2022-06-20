@@ -1,0 +1,76 @@
+
+[
+    {
+        "a_name" : "Shift 1 letter 'plus'1",
+        "shift" : 1,
+        "input": "a",
+        "expected": "b"
+    },
+    {
+        "a_name" : "Shift 1 letter 'minus'1",
+        "shift" : -1,
+        "input": "b",
+        "expected": "a"
+    },
+    {
+        "a_name" : "Shift letter a 'plus'2 to get c",
+        "shift" : 2,
+        "input": "a",
+        "expected": "c"
+    },
+    {
+        "a_name" : "Shift letter a 'plus'26 to get a",
+        "shift" : 26,
+        "input": "a",
+        "expected": "a"
+    },
+    {
+        "a_name" : "Shift upercase letter A 'plus'1 to get b",
+        "shift" : 1,
+        "input": "A",
+        "expected": "b"
+    },
+    {
+        "a_name" : "Shift letters abcdefghijklmnopqrstuvwqyz 'plus' 28 to get cdefghijklmnopqrstuvwxyzab",
+        "shift" : 28,
+        "input": "abcdefghijklmnopqrstuvwxyz",
+        "expected": "cdefghijklmnopqrstuvwxyzab"
+    },
+    {
+        "a_name" : "Shift uper- and lower case letters aBcDeFgGHh minus 40 to get cdefghiijj",
+        "shift" : -50,
+        "input": "aBcDeFgGHh",
+        "expected": "cdefghiijj"
+    },
+    {
+        "a_name" : "Input of false character € results in  - ERROR: Crazy input - ",
+        "shift" : 1,
+        "input": "€",
+        "expected": " - ERROR: Crazy input - "
+    },
+    {
+        "a_name" : "Input of false character % results in  - ERROR: Crazy input - ",
+        "shift" : 1,
+        "input": "%",
+        "expected": " - ERROR: Crazy input - "
+    },
+    {
+        "a_name" : "Input of number 1 results in  - ERROR: Crazy input - ",
+        "shift" : 1,
+        "input": "1",
+        "expected": " - ERROR: Crazy input - "
+    },
+    {
+        "a_name" : "Shifting with non-integer 1.5 results in  - ERROR: Crazy input - ",
+        "shift" : 1.5,
+        "input": "a",
+        "expected": " - ERROR: Crazy input - "
+    },
+    {
+        "a_name" : "Shifting with non-integer a results in  - ERROR: Crazy input - ",
+        "shift" : "a",
+        "input": "a",
+        "expected": " - ERROR: Crazy input - "
+    }                      
+]
+
