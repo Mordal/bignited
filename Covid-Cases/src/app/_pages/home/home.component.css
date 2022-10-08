@@ -1,0 +1,16 @@
+.info {
+margin-top: 1rem;
+margin-bottom: 0rem;
+}
+
+.chart{
+margin-bottom: 5rem;
+}
+
+.btn {
+    margin-bottom: 2rem;
+}
+
+.error {
+    color: rgba(238, 9, 9, 0.781)
+  }

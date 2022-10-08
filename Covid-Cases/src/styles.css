@@ -1,0 +1,14 @@
+.index {
+    background-color: rgb(167, 225, 245);
+    color:rgb(240, 31, 16)
+}
+
+:root {
+    --main-color: rgb(0, 6, 95);
+    --secondary-color: rgb(37, 52, 250);
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    color:rgb(245, 24, 24)
+}

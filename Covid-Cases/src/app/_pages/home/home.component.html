@@ -1,0 +1,39 @@
+<p>Get information of a country </p>
+
+<form action="submit" [formGroup]="formCovidCases" (ngSubmit)="onSubmit()" >
+
+    <div class="form-floating mb-3">    
+        <select  id="floatingCountry" name="country" class="form-select" formControlName="country">
+            <option *ngFor="let country of countryList" value="{{country}}">{{country}}</option>
+        </select>
+        <label for="floatingCountry">Select a Country</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <select id="floatingMonth" name="month" class="form-select" formControlName="month">
+            <option *ngFor="let month of months; let i = index" value="{{i}}">{{month}}</option>
+        </select>
+        <label for="floatingMonth">Select a month for the year 2020</label>
+    </div>
+
+    <div>
+        <button [disabled]="formCovidCases.invalid"  class= "btn btn-primary" id="get-info"> Get info </button>
+    </div>
+</form>
+
+<div *ngIf="country.population"  class="info"> 
+    <app-info [country]= "country"></app-info>
+</div>
+
+<div *ngIf="readyForChart == false"  class="loading">
+    <app-loading [progress]="progress"> </app-loading>
+</div>
+
+<div *ngIf="readyForChart == true"  class="chart"> 
+    <app-chart [country]= "country"></app-chart>
+</div>
+
+<div *ngIf="errorMessage !=''" class="error">
+    <strong><p>{{errorMessage}}</p></strong>
+</div>
+

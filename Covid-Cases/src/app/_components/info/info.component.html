@@ -1,0 +1,11 @@
+
+<div class="information" >
+    <h5>Country: </h5> <b>{{country.name}}</b> <br>
+    <h5>Population: </h5> <b>{{country.population}}</b> <br>
+    <h5>Currently used vaccines: </h5>
+    <ul>
+        <li *ngFor = "let vaccine of country.vaccinesUsed">{{vaccine}}</li>
+    </ul>
+
+    <h5>Overview cases: </h5>
+</div>

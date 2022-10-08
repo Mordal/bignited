@@ -1,0 +1,12 @@
+.chart-wrapper {
+    width: 520px;
+    min-width: 520px;
+    max-width: 560px;
+    height: 300px;
+    min-height: 200px;
+    max-height: 600px;
+    color: rgba(233, 12, 12, 0.929);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgba(212, 212, 212, 0.899), rgba(130, 239, 111, 0.668));
+    background-attachment: fixed;
+  }
