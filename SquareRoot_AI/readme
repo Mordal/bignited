@@ -1,0 +1,44 @@
+
+------------------------------------------------------------------------------------------------------------------------------
+Analyse van de opgave
+De opgave vraagt de vierkantswortel te berekenen ZONDER een vierkantswortel-functie toe te passen.
+
+Het berekenen van een vierkantswortel kan niet gedaan worden met een simpele formule, maar in de plaats daarvan start je met een wilde gok van 
+wat de uitkomst zou kunnen zijn. Dan ga je kijken waar je uitkomt als je dat getal in het kwadraat neemt om vervolgens je gok bij te stellen, 
+opnieuw te berekenen en zo verder tot je merkt dat de gok tot 5 cijfers na de komma juist blijkt te zijn.
+De juiste formule om tot een uitkomst te komen gebruik ik in mijn code (def calculate_Square())
+
+Hoe dichter de initiële gok bij de uiteindelijke uitkomst ligt, hoe minder iteraties van de formule er nodig zijn om het antwoord te produceren. 
+Idealiter gok je dus meteen het juiste antwoord vanaf het begin.
+En nu komt het: wie zegt ‘gokken aan de hand van een input’ zegt AI.
+
+------------------------------------------------------------------------------------------------------------------------------
+Oplossing
+Ik heb dus een AI-model geschreven die aan de hand van een input gaat gokken wat de vierkantswortel ervan is.
+
+Je krijgt van mij een ‘dom’ model, dat van niks weet en totaal niet weet wat er van zich verwacht wordt.
+Als je een getal ingeeft doet hij een voorspelling op de uitkomst en wordt deze voorspelling gebruikt om de effectieve vierkantswortel te berekenen. 
+Je zal zien dat van de eerste input, het AI begint te trainen en dus te leren wat er van hem verwacht wordt. 
+
+Probeer bijvoorbeeld maar eens een getal in te geven en dan nog één… en dan terug het eerste getal.
+Als je niet meteen met grote getallen begint te smijten gaat het AI snel en efficiënt leren.
+
+Als info krijg je te zien wat de voorspelling was van het AI, wat de effectieve uitkomst was en hoeveel iteraties de functie calculate_Square() 
+nodig had om tot de effectieve vierkantswortel te komen op basis van de voorspelling van het AI.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+Extra foefkes
+Omdat we van een AI graag alles uitzetten in een grafiek heb ik een knopje voorzien om de huidige kennis van het AI te plotten. 
+
+Het AI leert enkel van de input die jij geeft, dus als hij een eerste keer een voorspelling moet doen van een getal in een range dat hij 
+nog nooit gezien heeft, zal de voorspelling niet accuraat zijn. Ik heb daarom een toggle switchke voorzien die alle 5 seconden een input zal 
+generen waarop de AI een voorspelling moet geven. Deze input + berekende vierkantswortel wordt dan mee opgenomen in zijn ‘kennis’ en hiermee zal 
+het getrainde model steeds slimmer en slimmer worden.
+
+Tot slot willen we een getraind model opslagen voor later gebruik, dat kan met het save-knopje.
+Gesavede modellen worden automatisch ingeladen bij het opstarten van het programma. (database gegevens gaan wel verloren)
+
+Voila..
+
+
